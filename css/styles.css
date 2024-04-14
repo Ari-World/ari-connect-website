@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: #613469;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #613469;
+    padding: 2rem 10rem;
+  }
+  
+  .company-logo {
+    height: 1.3rem;
+  }
+  
+  .navbar nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .navbar-links li {
+    margin-right: 20px;
+  }
+  
+  .navbar-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-links li a {
+    color: #613469;
+    text-decoration: none;
+    font-weight: 550;
+  }
+  
+  #invite-btn {
+    background-color: #738ADB;
+    border: 3px solid #738ADB;
+    color: white;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+#invite-btn:hover {
+    color: #738ADB;
+    background-color: #fff;
+}
+
+
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 7.5rem;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.left-side {
+  width: calc(50% - 153px);
+}
+
+.right-side {
+  width: 277px;
+}
+
+.left-side h1 {
+  font-size: 2rem; /* 32px / 16px */
+  margin-bottom: 15px;
+}
+
+.left-side p {
+  font-size: 1.1rem; /* 15px / 16px */
+  margin-bottom: 15px;
+}
+
+.buttons {
+  padding-top: 25px;
+  display: flex; /* Make buttons side by side */
+  list-style: none;
+}
+
+.buttons li {
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.buttons li:not(:last-child) {
+  margin-right: 30px; /* Add right margin between buttons */
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 11px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 9rem; /* Set fixed width for buttons */
+  text-align: center;
+  font-weight: 500;
+}
+
+.join-btn {
+  background-color: #EF6B95;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.join-btn:hover {
+  box-shadow: 0 0 5px 2px #EF6B95;
+}
+
+.invite-btn {
+  background-color: #8F5F95;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.invite-btn:hover {
+  box-shadow: 0 0 5px 2px #8F5F95;
+}
+
+.count-container {
+  display: flex;
+  margin-top: 2.5rem;
+  gap: 3rem;
+}
+
+.server-count, .user-count, .uptime-count {
+  text-align: center;
+}
+
+.server-count h2, .user-count h2, .uptime-count h2 {
+  font-size: 24px;
+  color: #EF6B95;
+  margin-bottom: 5px;
+}
+
+.server-count p, .user-count p, .uptime-count p{
+  font-size: 18px;
+  font-weight: 500;
+  color: #EF6B95;
+  margin-bottom: 0;
+}
+
+.right-side img {
+  width: 120%;
+  height: auto;
+}
+
+.feature-section {
+  text-align: center;
+  margin-top: 100px; /* Adjust as needed */
+}
+
+.feature {
+  font-size: 2rem;
+  color: #613469;
+  margin-bottom: 4.68rem;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column; /* Change to column */
+  margin-top: 60px; /* Adjust as needed */
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin between items */
+}
+
+.feature-item .img-left {
+  max-width: 35%; /* Adjust as needed */
+  height: auto;
+  margin-left: 11.25rem;
+}
+
+.feature-item .img-right {
+  max-width: 35%; /* Adjust as needed */
+  height: auto;
+  margin-right: 11.25rem;
+}
+
+.feature-item .text {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.right-text {
+  flex: 1;
+  text-align: right;
+  padding: 0 20px;
+}
+
+.feature-item h2 {
+  font-size: 1.5rem;
+  color: #613469;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.feature-item p {
+  font-size: 1.1rem;
+  color: #613469;
+}
+
+.footer {
+  height: 168px;
+  margin-top: 6.25rem;
+  background-color: #D9D9D9;
+  color: #613469;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.625rem;
+}
+
+/* Style for the hyperlink */
+.footer a {
+  color: #EF6B95;
+  text-decoration: none;
+  font-weight: bold;
+}
