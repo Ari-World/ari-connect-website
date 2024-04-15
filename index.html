@@ -12,17 +12,22 @@
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="images/Ari_Connect.jpg" alt="Ari Connect Logo" class="company-logo">
-        <nav>
-          <ul class="navbar-links">
-            <li><a target="_blank" href="#">HOME</a></li>
-            <li><a target="_blank" href="#">VOTE</a></li>
-            <li><a target="_blank" href="https://discord.gg/HnjyK33cJp">SUPPORT</a></li>
-            <li><a target="_blank" href="#">DASHBOARD</a></li>
-            <li><a target="_blank" href="https://discord.com/oauth2/authorize?client_id=895242125208342548" id="invite-btn">INVITE BOT</a></li>
-          </ul>
-        </nav>
+        <div class="navbar">
+          <img src="images/Ari_Connect.jpg" alt="Ari Connect Logo" class="company-logo">
+          <nav>
+              <ul class="navbar-links" id="navbar-links">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">VOTE</a></li>
+                  <li><a href="https://discord.gg/HnjyK33cJp">SUPPORT</a></li>
+                  <li><a href="#">DASHBOARD</a></li>
+                  <li><a href="https://discord.com/oauth2/authorize?client_id=895242125208342548" id="invite-btn">INVITE BOT</a></li>
+              </ul>
+          </nav>
+          <div class="menu-icon" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
       </div>
 
       <div class="container">
@@ -84,5 +89,7 @@
       <h2>Have any questions for us?</h2>
       <p>The Ari Connect Community Server for support, suggestions, feedback and general talk can be joined <a target="_blank" href="https://discord.gg/HnjyK33cJp">here</a>.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

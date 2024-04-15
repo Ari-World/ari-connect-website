@@ -92,27 +92,27 @@ body {
 }
 
 .left-side h1 {
-  font-size: 2rem; /* 32px / 16px */
+  font-size: 2rem; 
   margin-bottom: 15px;
 }
 
 .left-side p {
-  font-size: 1.1rem; /* 15px / 16px */
+  font-size: 1.1rem;
   margin-bottom: 15px;
 }
 
 .buttons {
   padding-top: 25px;
-  display: flex; /* Make buttons side by side */
+  display: flex;
   list-style: none;
 }
 
 .buttons li {
-  margin-bottom: 0; /* Remove bottom margin */
+  margin-bottom: 0;
 }
 
 .buttons li:not(:last-child) {
-  margin-right: 30px; /* Add right margin between buttons */
+  margin-right: 30px;
 }
 
 .buttons a {
@@ -120,7 +120,7 @@ body {
   padding: 11px 20px;
   text-decoration: none;
   border-radius: 5px;
-  width: 9rem; /* Set fixed width for buttons */
+  width: 9rem;
   text-align: center;
   font-weight: 500;
 }
@@ -181,7 +181,7 @@ body {
 
 .feature-section {
   text-align: center;
-  margin-top: 100px; /* Adjust as needed */
+  margin-top: 100px; 
 }
 
 .feature {
@@ -192,24 +192,24 @@ body {
 
 .feature-container {
   display: flex;
-  flex-direction: column; /* Change to column */
-  margin-top: 60px; /* Adjust as needed */
+  flex-direction: column;
+  margin-top: 60px; 
 }
 
 .feature-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Add margin between items */
+  margin-bottom: 20px;
 }
 
 .feature-item .img-left {
-  max-width: 35%; /* Adjust as needed */
+  width: 31rem;
   height: auto;
   margin-left: 11.25rem;
 }
 
 .feature-item .img-right {
-  max-width: 35%; /* Adjust as needed */
+  width: 31rem;
   height: auto;
   margin-right: 11.25rem;
 }
@@ -217,7 +217,7 @@ body {
 .feature-item .text {
   flex: 1;
   text-align: left;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 0 20px;
 }
 
 .right-text {
@@ -229,7 +229,7 @@ body {
 .feature-item h2 {
   font-size: 1.5rem;
   color: #613469;
-  margin-bottom: 10px; /* Adjust as needed */
+  margin-bottom: 10px;
 }
 
 .feature-item p {
@@ -256,3 +256,248 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Hamburger menu icon styles */
+
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #613469;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.menu-icon {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Adjust the padding for the navbar links to prevent overlap with the menu icon */
+.navbar-links {
+  padding-left: 60px;
+}
+
+/* Show the navbar links when the .show class is applied */
+.navbar-links.show {
+  left: 0;
+  transition: left 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: content-box;
+  }
+  body {
+    font-size: 14px;
+    color: #613469;
+    background-color: white;
+}
+
+  .navbar {
+    padding-left: 2.5rem;
+  }
+  .menu-icon {
+    display: block;
+    margin-right: auto;
+  }
+
+  .company-logo {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+}
+
+  .navbar-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    background-color: #fff;
+    height: 100%;
+    width: 35%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding-left: 0;
+  }
+
+  /* Styles for navbar links */
+  .navbar-links a {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-links.show li {
+    margin: 0;
+  }
+  .navbar-links.show {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+
+  /* Rotate bar elements for animation */
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6.5px, 5px);
+}
+
+  .change .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-6px, -5px);
+  }
+
+  h1 {
+    font-size: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+  .count-container {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .left-side {
+      width: 100%;
+      text-align: center;
+      order: 2; 
+  }
+
+  .left-side h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+  .left-side h2 {
+    font-size: 1.3rem;
+  }
+  
+  .left-side p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+  
+  .right-side {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .right-side img {
+    width: 10rem;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+}
+
+  .buttons li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .footer {
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+  footer h2 {
+    font-size: 1.2rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  .feature-section {
+    margin-top: 3rem;
+  }
+
+  .feature {
+    margin-bottom: 1.8rem;
+  }
+  .feature-container {
+    margin-top: 1.8rem;
+  }
+
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  .feature-item .img-left,
+  .feature-item .img-right {
+      display: block;
+      max-width: 70%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+  }
+
+  .feature-item .img-left {
+    margin-left: 0;
+  }
+
+  .text,
+  .right-text {
+      padding: 0 20px;
+      text-align: center;
+      order: 1;
+  }
+
+  .feature-item .text h2,
+  .feature-item .right-text h2 {
+      margin-top: 0;
+      margin-bottom: 2px;
+      font-size: 1.3rem;
+      text-align: center;
+  }
+
+  .feature-item .text p,
+  .feature-item .right-text p {
+      margin-bottom: 0;
+      font-size: 1rem;
+      text-align: center;
+  }
+
+
+
+
+
+
+
+}
+
+
